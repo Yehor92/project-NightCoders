@@ -25,12 +25,12 @@
   padding: 32px 52px 32px 53px;
 }
 .product-thumb {
-  width: 230px;
+  max-width: 230px;
   margin-bottom: 8px;
 }
-.product-image {
+/* .product-image {
   width: 100%;
-}
+} */
 .product-subtitle {
   font-weight: 600;
   font-size: 18px;
