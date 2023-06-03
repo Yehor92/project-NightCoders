@@ -1,5 +1,21 @@
 /*  ? HOW IT'S MADE */
 
+.how-made-section {
+  padding-bottom: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .how-made-section {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .how-made-section {
+    padding-bottom: 221px;
+  }
+}
+
 .how-made-title {
   margin-bottom: 32px;
 
@@ -34,26 +50,32 @@
 @media only screen and (min-width: 1200px) {
   .how-container-flex {
     flex-direction: row;
-    justify-content: center;
   }
 }
 
-.how-made-icons-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(50%, 50%);
+.how-made-wrapper {
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .how-made-wrapper {
+    margin: 0 auto;
+  }
 }
 
 .how-made-icons {
-  fill: none;
-  stroke: red;
+  fill: transparent;
+  stroke: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
 }
 
 .how-made-img {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   border-radius: 15px;
-  margin: 0 auto;
 }
 
 .how-made-try {
