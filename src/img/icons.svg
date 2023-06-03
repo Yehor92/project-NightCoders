@@ -45,4 +45,8 @@
 <path fill="none" stroke="#fafafa" style="stroke: var(--color7, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0667" d="M4.267 0.533h38.4c2.062 0 3.733 1.671 3.733 3.733v23.467c0 2.062-1.671 3.733-3.733 3.733h-38.4c-2.062 0-3.733-1.671-3.733-3.733v-23.467c0-2.062 1.671-3.733 3.733-3.733z"></path>
 </symbol>
 </defs>
+<symbol id="made-play-icons" viewBox="0 0 32 32">
+      <path d="M11.886 23.771V10.057l12.8 6.857-12.8 6.857z"/>
+      <path stroke-width=".914" d="M31.543 16c0 8.584-6.959 15.543-15.543 15.543S.457 24.584.457 16 7.416.457 16 .457 31.543 7.416 31.543 16z"/>
+    </symbol>
 </svg>
