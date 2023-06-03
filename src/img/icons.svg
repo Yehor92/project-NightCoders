@@ -8,7 +8,7 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.5" d="M4 16h24M4 8h24M4 24h24"></path>
 </symbol>
 <symbol id="icon-close" viewBox="0 0 32 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color3, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M22.667 9.333l-13.333 13.333M9.333 9.333l13.333 13.333"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M22.667 9.333l-13.333 13.333M9.333 9.333l13.333 13.333"></path>
 </symbol>
 <symbol id="icon-instagram" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M22.667 2.667h-13.333c-3.682 0-6.667 2.985-6.667 6.667v13.333c0 3.682 2.985 6.667 6.667 6.667h13.333c3.682 0 6.667-2.985 6.667-6.667v-13.333c0-3.682-2.985-6.667-6.667-6.667z"></path>
@@ -45,4 +45,8 @@
 <path fill="none" stroke="#fafafa" style="stroke: var(--color7, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0667" d="M4.267 0.533h38.4c2.062 0 3.733 1.671 3.733 3.733v23.467c0 2.062-1.671 3.733-3.733 3.733h-38.4c-2.062 0-3.733-1.671-3.733-3.733v-23.467c0-2.062 1.671-3.733 3.733-3.733z"></path>
 </symbol>
 </defs>
+<symbol id="made-play-icons" viewBox="0 0 32 32">
+      <path d="M11.886 23.771V10.057l12.8 6.857-12.8 6.857z"/>
+      <path stroke-width=".914" d="M31.543 16c0 8.584-6.959 15.543-15.543 15.543S.457 24.584.457 16 7.416.457 16 .457 31.543 7.416 31.543 16z"/>
+    </symbol>
 </svg>
