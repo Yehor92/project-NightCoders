@@ -1,0 +1,79 @@
+/* Advantages section */
+.advantages {
+  background-color: var(--bg-color-section);
+}
+.advant-container {
+  padding-top: 20px;
+  padding-bottom: 36px;
+}
+@media only screen and (min-width: 768px) {
+  .advant-container {
+    padding-top: 50px;
+    padding-bottom: 85px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advant-container {
+    padding: 50px;
+    margin-bottom: 128px;
+  }
+}
+.advant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .advant-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advant-list {
+    flex-wrap: nowrap;
+    gap: 88px;
+  }
+}
+.advant-item {
+  position: relative;
+  max-width: 308px;
+}
+@media only screen and (min-width: 1200px) {
+  .advant-border::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: -18px;
+    height: 124px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+.advant-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+}
+.advant-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--white-color);
+  margin-bottom: 18px;
+}
+.advant-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}

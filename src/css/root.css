@@ -47,6 +47,7 @@ body {
   min-width: 120px;
   min-height: 41px;
   padding: 12px 28px;
+  border: none;
 
   font-family: 'Montserrat';
   font-weight: 600;
@@ -78,7 +79,7 @@ body {
 .btn-dark {
   min-width: 159px;
   min-height: 41px;
-  padding: 12px 28px;
+  padding: 12px 26px;
 
   font-family: 'Montserrat';
   font-weight: 600;
@@ -113,7 +114,7 @@ body {
 .btn-light {
   min-width: 165px;
   min-height: 41px;
-  padding: 12px 28px;
+  padding: 12px 26px;
 
   font-family: 'Montserrat';
   font-weight: 600;
@@ -148,7 +149,7 @@ body {
 .btn-subscribe {
   min-width: 128px;
   min-height: 41px;
-  padding: 12px 28px;
+  padding: 12px 26px;
 
   font-family: 'Montserrat';
   font-weight: 600;
@@ -177,4 +178,13 @@ body {
 .btn-subscribe:focus {
   color: var(--secondary-color);
   background-color: var(--accent-orange-btn);
+}
+
+.instagram,
+.twitter {
+  fill: none;
+  stroke: black;
+}
+.close {
+  stroke: black;
 }
