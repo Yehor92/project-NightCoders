@@ -93,6 +93,7 @@
   display: flex;
   gap: 14px;
   margin-bottom: 32px;
+  align-items: center;
 }
 
 .hero-scroll-link {
