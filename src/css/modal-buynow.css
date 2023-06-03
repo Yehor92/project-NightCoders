@@ -1,9 +1,9 @@
 .modal-buynow-backdrop {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
 }
 
@@ -13,13 +13,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -30%);
     background-color: var(--bg-color-site);
     padding: 32px 24px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
 }
 
 .modal-buynow-btn {
@@ -37,6 +36,8 @@
 }
 
 .buynow-btn-svg {
+    width: 24px;
+    height: 24px;
     fill: var(--primary-color);
     stroke: var(--primary-color);
 }
@@ -50,6 +51,7 @@
     text-align: center;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin-bottom: 32px;
 }
 
 .modal-buynow-title span {
@@ -60,6 +62,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-bottom: 32px;
 }
 
 .modal-buynow-item {
@@ -135,12 +138,109 @@
     border-right: 1px solid rgba(17, 17, 17, 0.1);
 }
 
+.buynow-phonesvg {
+    width: 24px;
+    height: 18px;
+}
+
 .buynow-cardicon {
     position: absolute;
     top: 34px;
     right: 14px;
+    width: 32px;
+    height: 21px;
 }
 
 .modal-buynow-submit {
     width: 109px;
 }
+
+@media screen and (min-width: 768px) {
+    .modal-buynow {
+        min-width: 609px;
+        padding: 48px;
+    }
+
+    .modal-buynow-btn {
+        top: 24px;
+        right: 24px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .buynow-btn-svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .modal-buynow-title {
+        font-size: 24px;
+    }
+
+    .modal-buynow-list {
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .modal-buynow-item {
+        flex-direction: column;
+        width: calc((100% - 32px) / 3);
+        padding: 24px 20px 18px;
+        gap: 14px;
+    }
+
+    .buynow-item-btn {
+        padding: 6px 29px;
+    }
+
+    .buynow-inp-list {
+        flex-direction: row;
+        gap: 21px;
+    }
+
+    .modal-buynow-label {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+    .modal-buynow-name {
+        width: 246px;
+    }
+
+    .modal-buynow-input {
+        padding: 22px 24px;
+    }
+
+    .modal-buynow-input::placeholder {
+        font-size: 18px;
+    }
+
+    .buynow-numb {
+        padding-left: 177px;
+    }
+
+    .buynow-phoneicon {
+        gap: 18px;
+        top: 45px;
+        left: 24px;
+        padding-right: 32px;
+        font-size: 18px;
+    }
+
+    .buynow-phonesvg {
+        width: 32px;
+        height: 24px;
+    }
+
+    .buynow-cardicon {
+        top: 45px;
+        right: 24px;
+        width: 44px;
+        height: 30px;
+    }
+
+    .modal-buynow-submit {
+        width: 133px;
+    }
+  }
