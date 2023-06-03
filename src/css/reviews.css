@@ -1,41 +1,64 @@
 .reviews {
+  padding-bottom: 72px;
 }
-.col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 32px;
-}
-.title {
+.reviews-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  color: #111111;
 
+  margin-bottom: 32px;
+}
+.reviews-title-accent {
   color: #fd9222;
 }
-.title-text {
-  color: #111111;
+.reviews-btn {
+  display: block;
+  margin: 0 auto;
 }
-.holder {
+
+/* slider styles */
+.reviews-slider {
+  margin-bottom: 32px;
 }
-.caption {
+.reviews-slider-wrapper {
+}
+.reviews-slide {
+  margin-bottom: 20px;
+}
+.reviews-slide-wrap {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+.reviews-slide-img {
+}
+.reviews-slide-holder {
+  margin-top: -40px;
+  padding: 56px 18px 42px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9px 26px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+}
+.reviews-slide-caption {
+  margin-bottom: 24px;
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.3;
-  text-align: center;
+  line-height: 1.33;
 
   color: #111111;
 }
-.text {
-  width: 299px;
-  font-weight: 400;
+.reviews-slide-desc {
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
   letter-spacing: -0.02em;
 
   color: rgba(17, 17, 17, 0.7);
