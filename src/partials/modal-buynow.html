@@ -1,11 +1,11 @@
 <div class="modal-buynow-backdrop">
     <div class="modal-buynow">
         <button type="button" class="modal-buynow-btn">
-            <svg widh="24" height="24" fill="#111111">
+            <svg widh="24" height="24" class="buynow-btn-svg">
                 <use href="./img/icons.svg#icon-close"></use>
             </svg>
         </button>
-        <p class="modal-buynow-title">buy<span>now</span></p>
+        <p class="modal-buynow-title">buy <span>now</span></p>
         <ul class="modal-buynow-list">
             <li class="modal-buynow-item">
                 <img srcset="./img/modal-buy-now/buy1-mobile.jpg 84w,
@@ -33,34 +33,37 @@
             </li>
         </ul>
         <form class="modal-buynow-form">
-            <label>
+            <label class="modal-buynow-label">
                 Personal iformation
-                <ul>
-                    <li><input type="text"></li>
-                    <li><input type="text"></li>
+                <ul class="buynow-inp-list">
+                    <li><input type="text" name="buynow-name" class="modal-buynow-input" placeholder="Name"></li>
+                    <li><input type="text" name="buynow-surname" class="modal-buynow-input" placeholder="Surname"></li>
                 </ul>
             </label>
 
-            <label>
+            <label class="modal-buynow-label">
                 Email
-                <input type="email" name="buynow-email">
+                <input type="email" name="buynow-email" class="modal-buynow-input" placeholder="Enter your email">
             </label>
 
-            <label>
+            <label class="modal-buynow-label">
                 Phone number
-                <input type="tel" name="buynow-phone">
-                <svg width="24" height="18"><use href="./img/icons.svg#icon-flag"></use></svg>
+                <input type="tel" name="buynow-phone" class="buynow-numb modal-buynow-input" placeholder="Phone number">
+                <span class="buynow-phoneicon">
+                    <svg width="24" height="18"><use href="./img/icons.svg#icon-flag"></use></svg>
+                    +380
+                </span>
             </label>
 
-            <label>
+            <label class="modal-buynow-label">
                 Card number
-                <input type="text" name="buynow-card">
+                <input type="text" name="buynow-card" class="modal-buynow-input" placeholder="Enter card">
                 <svg width="32" height="21"><use href="./img/icons.svg#icon-mastercard"></use></svg>
             </label>
 
-            <label>
+            <label class="modal-buynow-label">
                 Comment
-                <textarea name="buynow-comment" rows="10"></textarea>
+                <textarea name="buynow-comment" class="modal-buynow-input" rows="5" placeholder="Enter text"></textarea>
             </label>
 
             <button type="submit" class="btn-orange">Submit</button>

@@ -1,4 +1,6 @@
 .modal-buynow-backdrop {
+    display: flex;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,12 +12,124 @@
 
 .modal-buynow {
     min-width: 311px;
-    height: auto;
+    height:fit-content;
     background-color: var(--bg-color-site);
-    position: absolute;
-    top: 50%;
-    left: 50%;
     padding: 32px 24px;
-    transform: translate(-50%, -50%);
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.modal-buynow-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color-site);
+    padding: 0;
+    border: none;
+}
+
+.buynow-btn-svg {
+    fill: var(--primary-color);
+    stroke: var(--primary-color);
+}
+
+.modal-buynow-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.modal-buynow-title span {
+    color: var(--primary-color);
+}
+
+.modal-buynow-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-buynow-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    padding: 8px 16px;
+    align-items: center;
+}
+
+.buynow-item-btn {
+    padding: 6px 16px;
+    background-color: var(--bg-color-site);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.modal-buynow-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.buynow-inp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.modal-buynow-label {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.modal-buynow-input {
+    width: 100%;
+    display: flex;
+    padding: 14px 18px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    resize: none;
+    background-color: var(--bg-color-site);
+}
+
+.modal-buynow-input::placeholder {
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.buynow-numb {
+    padding-left: 98px;
+}
+
+.buynow-phoneicon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    top: 34px;
+    left: 18px;
+    padding-right: 8px;
+    border-right: 1px solid rgba(17, 17, 17, 0.1);
 }
