@@ -1,0 +1,125 @@
+/* top-sellers-section */
+
+.top-sellers {
+  padding-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .top-sellers {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .top-sellers {
+    padding-bottom: 128px;
+  }
+}
+.top-sellers-subscribe {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height:1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FD9222;
+}
+.tsellers-sub {
+    color: #111;
+}
+@media only screen and (min-width: 768px) {
+    .top-sellers-subscribe  {
+    margin-bottom: 50px;
+  }
+}
+
+.tsellers-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .tsellers-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+
+  }
+}
+  /* tsellers-item */
+  .img-tsellers {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    }
+ @media only screen and (min-width: 768px) {
+   .img-tsellers {
+     margin-bottom: 0;
+      }
+ }
+
+@media only screen and (min-width: 768px) {
+ .tsellers-item {
+    width: 344px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+ .tsellers-item {
+    width: 368px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .other-skr {
+    display: none;
+  }
+} 
+@media only screen and (min-width: 768px) {
+.other-skr{
+ display: flex;
+}
+} 
+@media only screen and (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+} 
+.tsellers-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29; 
+  letter-spacing: -0.02em;
+  color: #111111; 
+}
+@media only screen and (min-width: 768px) {
+  .tsellers-text  {
+    width: 306px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .tsellers-text {
+    width: 407px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+    .desktop-only {
+     display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+ .tsellers  {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.btn-tsellers {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .btn-tsellers {
+    margin-right: 0;
+    margin-left: auto;  }
+}
+ 

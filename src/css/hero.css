@@ -1,3 +1,21 @@
+.hero {
+  padding-top: 62px;
+  padding-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 72px;
+  }
+}
+
 .hero > .container {
   max-width: 335px;
   padding-top: 395px;
@@ -75,12 +93,19 @@
   display: flex;
   gap: 14px;
   margin-bottom: 32px;
+  align-items: center;
 }
 
-.hero-scroll-btn {
+.hero-scroll-link {
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-scroll-link {
+    gap: 14px;
+  }
 }
 
 .hero-scroll-label {
