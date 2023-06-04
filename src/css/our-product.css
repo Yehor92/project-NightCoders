@@ -1,0 +1,119 @@
+.product-container {
+  padding-bottom: 72px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .product-container {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-container {
+    padding-bottom: 128px;
+  }
+}
+/* Product card styles */
+.product-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .product-title {
+    font-size: 24px;
+    line-height: 1.16;
+
+    margin-bottom: 50px;
+  }
+}
+.product-title-color {
+  color: var(--secondary-color);
+}
+.product-list {
+  display: flex;
+}
+.product-item {
+  max-width: 335px;
+  height: 364px;
+
+  background: var(--white-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 32px 51px 32px 52px;
+}
+@media screen and (min-width: 768px) {
+  .product-item {
+    width: 270px;
+    padding: 31px 19px;
+  }
+}
+.product-thumb {
+  max-width: 230px;
+  margin-bottom: 8px;
+}
+.product-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  margin-bottom: 2px;
+}
+.product-descr {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+
+  margin-bottom: 18px;
+}
+.product-price {
+  width: 94px;
+  background: var(--bg-color-site);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  padding: 8px 18px;
+}
+/* Pagination styles */
+.swiper {
+  max-width: 335px;
+  height: 397px;
+}
+@media only screen and (min-width: 768px) {
+  .swiper {
+    max-width: 704px;
+    height: 409px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .swiper {
+    max-width: 1136px;
+  }
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -4px;
+}
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+
+  background: rgba(17, 17, 17, 0.1);
+}
+.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  border-radius: 13px;
+
+  background: var(--secondary-color);
+}
