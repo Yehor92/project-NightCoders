@@ -63,3 +63,13 @@
 
   color: rgba(17, 17, 17, 0.7);
 }
+.swiper-pagination-bullet-active {
+  --swiper-pagination-color: #fd9222;
+  --swiper-pagination-bullet-border-radius: 30%;
+  --swiper-pagination-bullet-width: 28px;
+}
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-width: 13px;
+  --swiper-pagination-bullet-height: 13px;
+  --swiper-pagination-bullet-horizontal-gap: 6.5px;
+}
