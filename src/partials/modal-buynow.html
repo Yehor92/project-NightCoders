@@ -1,0 +1,76 @@
+<div class="modal-buynow-backdrop is-hidden">
+    <div class="modal-buynow">
+        <button type="button" class="modal-buynow-btn">
+            <svg class="buynow-btn-svg">
+                <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <p class="modal-buynow-title">buy <span>now</span></p>
+        <ul class="modal-buynow-list">
+            <li class="modal-buynow-item">
+                <img srcset="./img/modal-buy-now/buy1-mobile.jpg 84w,
+                ./img/modal-buy-now/buy1.jpg 120w,
+                ./img/modal-buy-now/buy1-mobile@2x.jpg 168w,
+                ./img/modal-buy-now/buy1@2x.jpg 240w" sizes="(max-width: 768px) 84px, 120px, 100vw"
+                    src="./img/modal-buy-now/buy1-mobile.jpg" alt="Dark choco">
+                <button type="button" class="buynow-item-btn">100 g</button>
+            </li>
+            <li class="modal-buynow-item">
+                <img srcset="./img/modal-buy-now/buy2-mobile.jpg 84w,
+                ./img/modal-buy-now/buy2.jpg 120w,
+                ./img/modal-buy-now/buy2-mobile@2x.jpg 168w,
+                ./img/modal-buy-now/buy2@2x.jpg 240w" sizes="(max-width: 768px) 84px, 120px, 100vw"
+                    src="./img/modal-buy-now/buy2-mobile.jpg" alt="Choco-nuts">
+                <button type="button" class="buynow-item-btn">200 g</button>
+            </li>
+            <li class="modal-buynow-item">
+                <img srcset="./img/modal-buy-now/buy3-mobile.jpg 84w,
+                ./img/modal-buy-now/buy3.jpg 120w,
+                ./img/modal-buy-now/buy3-mobile@2x.jpg 168w,
+                ./img/modal-buy-now/buy3@2x.jpg 240w" sizes="(max-width: 768px) 84px, 120px, 100vw"
+                    src="./img/modal-buy-now/buy3-mobile.jpg" alt="Milk choco">
+                <button type="button" class="buynow-item-btn">300 g</button>
+            </li>
+        </ul>
+        <form class="modal-buynow-form">
+            <label class="modal-buynow-label">
+                Personal information
+                <ul class="buynow-inp-list">
+                    <li><input type="text" name="buynow-name" class="modal-buynow-name modal-buynow-input"
+                               pattern="^[a-zA-Z]+$" title="Use english dashboard" placeholder="Name"></li>
+                    <li><input type="text" name="buynow-surname" class="modal-buynow-name modal-buynow-input"
+                               pattern="^[a-zA-Z]+$" title="Use english dashboard" placeholder="Surname"></li>
+                </ul>
+            </label>
+
+            <label class="modal-buynow-label">
+                Email
+                <input type="email" name="buynow-email" class="modal-buynow-input" placeholder="Enter your email">
+            </label>
+
+            <label class="modal-buynow-label">
+                Phone number
+                <input type="tel" name="buynow-phone" class="buynow-numb modal-buynow-input"
+                       placeholder="Phone number" pattern="[0-9]{9}" title="Enter 9 digits without spaces">
+                <span class="buynow-phoneicon">
+                    <svg class="buynow-phonesvg"><use href="./img/icons.svg#icon-flag"></use></svg>
+                    +380
+                </span>
+            </label>
+
+            <label class="modal-buynow-label">
+                Card number
+                <input type="text" name="buynow-card" class="modal-buynow-input"
+                       placeholder="Enter card" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" title="Enter the card number, including spaces">
+                <svg class="buynow-cardicon"><use href="./img/icons.svg#icon-mastercard"></use></svg>
+            </label>
+
+            <label class="modal-buynow-label">
+                Comment
+                <textarea name="buynow-comment" class="modal-buynow-input" rows="5" placeholder="Enter text"></textarea>
+            </label>
+
+            <button type="submit" class="modal-buynow-submit btn-orange">Submit</button>
+        </form>
+    </div>
+</div>
