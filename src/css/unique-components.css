@@ -1,3 +1,15 @@
+/*========= Unique Components Section ======*/
+.components {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+@media screen and (min-width: 1200px) {
+  .components-cont {
+    padding-right: 31px;
+  }
+}
+
 .components-title {
   font-weight: 600;
   font-size: 20px;
@@ -39,5 +51,208 @@
   .components-text {
     max-width: 486px;
     margin-bottom: 50px;
+  }
+}
+
+.components-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .components-list {
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .components-list {
+    gap: 19px;
+  }
+}
+
+.components-img {
+  margin: 0 auto 25px auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .components-img {
+    margin-bottom: 36px;
+  }
+}
+
+.components-item-white {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+/* ======= Back-side Card ======== */
+
+.components-title-back {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 8px;
+}
+
+.components-subtitle-back {
+  display: flex;
+  gap: 4px;
+
+  margin-bottom: 14px;
+}
+.components-subtitle-orange {
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--white-color);
+
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px;
+
+  background-color: var(--secondary-color);
+  border-radius: 35px;
+}
+
+.components-subtitle-white {
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--secondary-color);
+
+  justify-content: center;
+  align-items: center;
+  padding: 6px 15px;
+
+  background-color: var(--bg-color-site);
+  border: 1px solid var(--secondary-color);
+  border-radius: 35px;
+}
+
+.components-text-back {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+/* ===== FLIP CARD ===== */
+.components-card {
+  position: relative;
+  perspective: 1000px;
+}
+
+.components-flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.components-card:hover .components-flip-card-inner {
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.components-card-orange {
+  background-color: var(--secondary-color);
+}
+
+.components-card-white {
+  background-color: var(--white-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.components-card-black {
+  background-color: var(--bg-color-section);
+}
+
+.componentes-flip-card-front {
+  width: 335px;
+  height: 270px;
+  padding: 28px;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .componentes-flip-card-front {
+    width: 270px;
+  }
+}
+
+.components-flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 335px;
+  height: 270px;
+  padding: 28px;
+  border-radius: 15px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background-color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .components-flip-card-back {
+    width: 270px;
+    padding: 20px;
+    overflow-y: hidden;
+  }
+}
+
+.child-one {
+  order: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .child-one {
+    order: 1;
+  }
+}
+
+.child-two {
+  order: 2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .child-two {
+    order: 3;
+  }
+}
+
+.child-three {
+  order: 3;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .child-three {
+    order: 4;
+  }
+}
+
+.child-four {
+  order: 4;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .child-four {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .card-white {
+    background-color: var(--white-color);
+    border: 1px solid var(--secondary-color);
   }
 }
