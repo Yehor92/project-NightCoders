@@ -1,0 +1,215 @@
+.subscribe-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  backdrop-filter: blur(2px);
+
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+}
+
+.subscribe-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  transition-property: visibility, transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 311px;
+  background-color: var(--bg-color-site);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-modal {
+    width: 538px;
+  }
+}
+
+.subscribe-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-close-btn {
+    top: 24px;
+    right: 24px;
+  }
+}
+
+.subscribe-close-icon {
+  stroke: var(--white-color);
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-close-btn:hover,
+.subscribe-close-btn:focus {
+  background-color: #fcf1e0;
+}
+
+.subscribe-close-btn:hover .subscribe-close-icon,
+.subscribe-close-btn:focus .subscribe-close-icon {
+  stroke: #f16529;
+}
+
+.subscibe-bg {
+  width: 100%;
+  height: 169px;
+  background-image: url(../img/modal-subscribe/bg-modal-sub-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscibe-bg {
+    background-image: url(../img/modal-subscribe/bg-modal-sub-mobile@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .subscibe-bg {
+    background-image: url(../img/modal-subscribe/bg-modal-sub.jpg);
+    height: 196px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscibe-bg {
+      background-image: url(../img/modal-subscribe/bg-modal-sub@2x.jpg);
+    }
+  }
+}
+
+.modal-subscribe-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-subscribe-title {
+    margin-bottom: 28px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-subscribe-title {
+    max-width: 298px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.modal-subscribe-title > span {
+  color: var(--secondary-color);
+}
+
+.subscribe-wrapper {
+  padding: 32px 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-wrapper {
+    padding: 40px;
+  }
+}
+
+.subscribe-input {
+  padding: 14px 18px;
+  width: 100%;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 313px;
+  }
+}
+
+.subscribe-input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.sub-form-wrapper {
+  position: relative;
+}
+
+.sub-form-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: inline-block;
+  min-width: 100px;
+  height: 100%;
+  border: none;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--white-color);
+
+  background: var(--secondary-color);
+  border-radius: 100px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .sub-form-btn {
+    min-width: 137px;
+  }
+}
+
+.sub-form-btn:hover,
+.sub-form-btn:focus {
+  color: var(--secondary-color);
+  background-color: var(--accent-orange-btn);
+}
