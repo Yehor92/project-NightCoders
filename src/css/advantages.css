@@ -1,19 +1,18 @@
 /* Advantages section */
 .advantages {
   background-color: var(--bg-color-section);
-}
-.advant-container {
   padding-top: 20px;
   padding-bottom: 36px;
 }
+
 @media only screen and (min-width: 768px) {
-  .advant-container {
+  .advantages {
     padding-top: 50px;
     padding-bottom: 85px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .advant-container {
+  .advantages {
     padding: 50px;
   }
 }
@@ -26,8 +25,7 @@
   .advant-list {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 60px;
-    row-gap: 50px;
+    gap: 32px;
   }
 }
 @media only screen and (min-width: 1200px) {

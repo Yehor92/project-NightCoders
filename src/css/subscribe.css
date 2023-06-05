@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 62px 0;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -36,6 +37,7 @@
   .subscribe {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(../img/subscribe/subcribe-desktop.jpg);
+    padding: 72px 0;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -51,12 +53,10 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 62px 0;
 }
 
 @media screen and (min-width: 768px) {
   .subscribe-container {
-    padding: 72px 0;
   }
 }
 
