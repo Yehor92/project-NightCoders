@@ -100,8 +100,11 @@
     max-width: 1136px;
   }
 }
-.product-slider .swiper-horizontal > .swiper-pagination-bullets,
+/* .product-slider .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -4px;
+} */
+.product-slider .swiper-pagination {
   bottom: -4px;
 }
 .product-slider .swiper-pagination-bullet {
