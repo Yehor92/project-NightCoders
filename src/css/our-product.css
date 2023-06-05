@@ -1,14 +1,14 @@
-.product-container {
+.our-product {
   padding-bottom: 72px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .product-container {
+  .our-product {
     padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .product-container {
+  .our-product {
     padding-bottom: 128px;
   }
 }
