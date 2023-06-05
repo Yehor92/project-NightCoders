@@ -223,7 +223,13 @@
   .components-flip-card-back {
     width: 270px;
     padding: 20px;
-    overflow-y: hidden;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .components-text-back {
+    height: 165px;
+    overflow: scroll;
   }
 }
 
