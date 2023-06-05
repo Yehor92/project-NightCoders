@@ -135,6 +135,16 @@
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
   margin-bottom: 14px;
+
+  transition-property: border-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.md-review-input:focus,
+.md-review-comment:focus {
+  border-color: var(--secondary-color);
+  /* box-shadow: 2px 3px 4px 0px rgba(253, 146, 34, 1); */
 }
 
 @media only screen and (min-width: 768px) {
@@ -234,6 +244,10 @@
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: -0.02em;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 768px) {
