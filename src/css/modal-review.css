@@ -1,4 +1,4 @@
-.overlay {
+.review-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,12 +11,14 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 100;
+}
 
+.overlay {
   opacity: 0;
   visibility: hidden;
 }
 
-.modal {
+.review-modal {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -30,14 +32,26 @@
   width: 311px;
   background-color: var(--bg-color-site);
   border-radius: 15px;
+}
+
+.modal {
+  width: 311px;
+  background-color: var(--bg-color-site);
+  border-radius: 15px;
 
   opacity: 0;
   visibility: hidden;
   z-index: 200;
 }
 
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media only screen and (min-width: 768px) {
-  .modal {
+  .review-modal {
     width: 517px;
     padding: 40px;
   }
@@ -225,10 +239,4 @@
   .md-review-comment {
     height: 137px;
   }
-}
-
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
 }
