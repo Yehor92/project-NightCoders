@@ -1,0 +1,221 @@
+.review-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  backdrop-filter: blur(2px);
+
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+}
+
+.review-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  transition-property: visibility, transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 32px 24px;
+  width: 311px;
+  background-color: var(--bg-color-site);
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-modal {
+    width: 517px;
+    padding: 40px;
+  }
+}
+
+.review-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-close-icon {
+  stroke: var(--primary-color);
+
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-close-btn:hover,
+.review-close-btn:focus {
+  background-color: #fcf1e0;
+}
+
+.review-close-btn:hover .review-close-icon,
+.review-close-btn:focus .review-close-icon {
+  stroke: #f16529;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  color: var(--secondary-color);
+  background-color: var(--accent-orange-btn);
+}
+
+.md-review-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .md-review-title {
+    width: 298px;
+  }
+}
+
+.md-review-title > span {
+  color: var(--secondary-color);
+}
+
+.md-review-input {
+  width: 100%;
+  height: 45px;
+  padding-left: 18px;
+  background-color: transparent;
+  outline: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .md-review-input {
+    height: 66px;
+    font-size: 18px;
+  }
+}
+
+.md-review-input::placeholder,
+.md-review-comment::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  .md-review-input::placeholder,
+  .md-review-comment::placeholder {
+    font-size: 18px;
+  }
+}
+
+.md-review-input[type='tel'] {
+  padding-left: 106px;
+}
+
+@media only screen and (min-width: 768px) {
+  .md-review-input[type='tel'] {
+    padding-left: 150px;
+  }
+}
+
+.md-review-wrapper {
+  position: relative;
+}
+
+.md-review-region {
+  position: absolute;
+  left: 18px;
+  top: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-right: 8px;
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .md-review-region {
+    top: 22px;
+    padding-right: 32px;
+  }
+}
+
+.md-review-region::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(64, 64, 64, 0.3);
+}
+
+.md-review-region > span {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .md-review-region > span {
+    font-size: 18px;
+  }
+}
+
+.md-review-comment {
+  width: 100%;
+  height: 91px;
+  padding: 14px 18px;
+  background-color: transparent;
+  outline: transparent;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  margin-bottom: 18px;
+  resize: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .md-review-comment {
+    height: 137px;
+  }
+}

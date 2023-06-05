@@ -1,0 +1,51 @@
+<div class="review-backdrop visually-hidden">
+  <div class="review-modal">
+    <button class="review-close-btn" type="button">
+      <svg class="review-close-icon" width="24" height="24">
+        <use href="../img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="md-review-title">
+      leave a review about <span>our chocolate</span>
+    </h2>
+    <form name="md-review-form">
+      <input
+        class="md-review-input"
+        type="text"
+        name="name"
+        placeholder="Name"
+        pattern="[A-Za-z]{1,32}"
+        required
+      />
+      <input
+        class="md-review-input"
+        type="email"
+        name="email"
+        required
+        placeholder="Enter your email"
+      />
+      <div class="md-review-wrapper">
+        <input
+          class="md-review-input"
+          type="tel"
+          name="phone"
+          placeholder="Phone number"
+        />
+        <div class="md-review-region">
+          <svg class="md-review-flag" width="24" height="18">
+            <use href="../img/icons.svg#icon-flag"></use>
+          </svg>
+          <span>+380</span>
+        </div>
+      </div>
+
+      <textarea
+        class="md-review-comment"
+        name="comment"
+        placeholder="Enter text"
+        required
+      ></textarea>
+      <button type="submit" class="btn-orange">Send</button>
+    </form>
+  </div>
+</div>
