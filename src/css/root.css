@@ -44,6 +44,7 @@ body {
 }
 
 .btn-orange {
+  display: inline-block;
   min-width: 120px;
   min-height: 41px;
   padding: 12px 28px;
@@ -77,6 +78,7 @@ body {
 }
 
 .btn-dark {
+  display: inline-block;
   min-width: 159px;
   min-height: 41px;
   padding: 12px 26px;
@@ -112,6 +114,7 @@ body {
 }
 
 .btn-light {
+  display: inline-block;
   min-width: 165px;
   min-height: 41px;
   padding: 12px 26px;
@@ -147,6 +150,7 @@ body {
 }
 
 .btn-subscribe {
+  display: inline-block;
   min-width: 128px;
   min-height: 41px;
   padding: 12px 26px;
