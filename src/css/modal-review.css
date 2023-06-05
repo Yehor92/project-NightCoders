@@ -10,11 +10,16 @@
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 1000;
+  z-index: 100;
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .review-modal {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -27,6 +32,22 @@
   width: 311px;
   background-color: var(--bg-color-site);
   border-radius: 15px;
+}
+
+.modal {
+  width: 311px;
+  background-color: var(--bg-color-site);
+  border-radius: 15px;
+
+  opacity: 0;
+  visibility: hidden;
+  z-index: 200;
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media only screen and (min-width: 768px) {

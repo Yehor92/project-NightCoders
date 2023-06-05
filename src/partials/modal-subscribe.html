@@ -1,28 +1,29 @@
-<div class="subscribe-backdrop visually-hidden">
-  <div class="subscribe-modal">
-    <button class="subscribe-close-btn" type="button">
-      <svg class="subscribe-close-icon" width="24" height="24">
-        <use href="../img/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <div class="subscibe-bg"></div>
-    <div class="subscribe-wrapper">
-      <h2 class="modal-subscribe-title">
-        Explore our <span> new chocolate</span> first!
-      </h2>
-      <form name="subscribe-form">
-        <div class="sub-form-wrapper">
-          <input
-            class="subscribe-input"
-            type="email"
-            name="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            title="min lenght after @ is 2"
-            placeholder="Enter your email"
-          />
-          <button type="submit" class="sub-form-btn">Submit</button>
-        </div>
-      </form>
-    </div>
+<div class="subscribe-modal modal" data-modal="2">
+  <button class="subscribe-close-btn js-modal-close" type="button">
+    <svg class="subscribe-close-icon" width="24" height="24">
+      <use href="../img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="subscibe-bg"></div>
+  <div class="subscribe-wrapper">
+    <h2 class="modal-subscribe-title">
+      Explore our <span> new chocolate</span> first!
+    </h2>
+    <form name="subscribe-form">
+      <div class="sub-form-wrapper">
+        <input
+          class="subscribe-input"
+          type="email"
+          name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          title="min lenght after @ is 2"
+          placeholder="Enter your email"
+        />
+        <button type="submit" class="sub-form-btn js-modal-close">
+          Submit
+        </button>
+      </div>
+    </form>
   </div>
 </div>
+<div class="subscribe-backdrop overlay js-overlay-modal"></div>
