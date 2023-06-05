@@ -13,8 +13,11 @@
 }
 
 .modal-buynow {
+  width: 95%;
   min-width: 311px;
+  height: 95%;
   max-height: auto;
+  overflow: scroll;
   position: fixed;
   left: 50%;
   top: 50%;
