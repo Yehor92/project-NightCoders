@@ -169,6 +169,7 @@
 
 .subscribe-input:focus {
   border-color: var(--secondary-color);
+  box-shadow: 2px 3px 4px 0px rgb(187, 180, 172);
 }
 
 @media only screen and (min-width: 768px) {
