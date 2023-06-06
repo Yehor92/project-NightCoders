@@ -17,7 +17,8 @@
         sizes="(min-width: 768px) 120px,  (min-width: 320px) 84px, 100vw"
         src="./img/modal-buy-now/buy1-mobile.jpg"
         alt="Dark choco"
-        loading="lazy">
+        loading="lazy"
+      />
       <button type="button" class="buynow-item-btn">100 g</button>
     </li>
     <li class="modal-buynow-item">
@@ -31,7 +32,8 @@
         sizes="(min-width: 768px) 120px,  (min-width: 320px) 84px, 100vw"
         src="./img/modal-buy-now/buy2-mobile.jpg"
         alt="Choco-nuts"
-        loading="lazy">
+        loading="lazy"
+      />
       <button type="button" class="buynow-item-btn">200 g</button>
     </li>
     <li class="modal-buynow-item">
@@ -45,13 +47,16 @@
         sizes="(min-width: 768px) 120px,  (min-width: 320px) 84px, 100vw"
         src="./img/modal-buy-now/buy3-mobile.jpg"
         alt="Milk choco"
-        loading="lazy">
+        loading="lazy"
+      />
       <button type="button" class="buynow-item-btn">300 g</button>
     </li>
   </ul>
   <form class="modal-buynow-form">
     <div>
-      <label class="modal-buynow-label">Personal information</label>
+      <label class="modal-buynow-label" for="pers-info"
+        >Personal information</label
+      >
       <span class="buynow-inp-list">
         <input
           type="text"
@@ -59,35 +64,43 @@
           class="modal-buynow-name modal-buynow-input"
           pattern="^[a-zA-Z]+$"
           title="Use english dashboard"
-          placeholder="Name">
+          placeholder="Name"
+          id="pers-info"
+        />
+
         <input
           type="text"
           name="buynow-surname"
           class="modal-buynow-name modal-buynow-input"
           pattern="^[a-zA-Z]+$"
           title="Use english dashboard"
-          placeholder="Surname">
+          placeholder="Surname"
+        />
       </span>
     </div>
 
     <div>
-      <label class="modal-buynow-label">Email</label>
+      <label class="modal-buynow-label" for="buynow-email">Email</label>
       <input
         type="email"
         name="buynow-email"
         class="modal-buynow-input"
-        placeholder="Enter your email">
+        placeholder="Enter your email"
+        id="buynow-email"
+      />
     </div>
 
     <div class="buynow-foricon">
-      <label class="modal-buynow-label">Phone number</label>
+      <label class="modal-buynow-label" for="buynow-phone">Phone number</label>
       <input
         type="tel"
         name="buynow-phone"
         class="buynow-numb modal-buynow-input"
         placeholder="Phone number"
         pattern="[0-9]{9}"
-        title="Enter 9 digits without spaces">
+        title="Enter 9 digits without spaces"
+        id="buynow-phone"
+      />
       <span class="buynow-phoneicon">
         <svg class="buynow-phonesvg">
           <use href="./img/icons.svg#icon-flag"></use>
@@ -97,26 +110,30 @@
     </div>
 
     <div class="buynow-foricon">
-      <label class="modal-buynow-label">Card number</label>
+      <label class="modal-buynow-label" for="buynow-card">Card number</label>
       <input
         type="text"
         name="buynow-card"
         class="modal-buynow-input"
         placeholder="Enter card"
         pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}"
-        title="Enter the card number, including spaces">
+        title="Enter the card number, including spaces"
+        id="buynow-card"
+      />
       <svg class="buynow-cardicon">
         <use href="./img/icons.svg#icon-mastercard"></use>
       </svg>
     </div>
 
     <div>
-      <label class="modal-buynow-label">Comment</label>
+      <label class="modal-buynow-label" for="buynow-comment">Comment</label>
       <textarea
         name="buynow-comment"
         class="modal-buynow-input"
         rows="5"
-        placeholder="Enter text"></textarea>
+        placeholder="Enter text"
+        id="buynow-comment"
+      ></textarea>
     </div>
 
     <button type="submit" class="modal-buynow-submit btn-orange js-modal-close">
