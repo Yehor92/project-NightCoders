@@ -14,11 +14,10 @@
           ./img/modal-buy-now/buy1-mobile@2x.jpg 168w,
           ./img/modal-buy-now/buy1@2x.jpg        240w
         "
-        sizes="(max-width: 768px) 84px, 120px, 100vw"
+        sizes="(min-width: 768px) 120px,  (min-width: 320px) 84px, 100vw"
         src="./img/modal-buy-now/buy1-mobile.jpg"
         alt="Dark choco"
-        loading="lazy"
-      />
+        loading="lazy">
       <button type="button" class="buynow-item-btn">100 g</button>
     </li>
     <li class="modal-buynow-item">
@@ -29,11 +28,10 @@
           ./img/modal-buy-now/buy2-mobile@2x.jpg 168w,
           ./img/modal-buy-now/buy2@2x.jpg        240w
         "
-        sizes="(max-width: 768px) 84px, 120px, 100vw"
+        sizes="(min-width: 768px) 120px,  (min-width: 320px) 84px, 100vw"
         src="./img/modal-buy-now/buy2-mobile.jpg"
         alt="Choco-nuts"
-        loading="lazy"
-      />
+        loading="lazy">
       <button type="button" class="buynow-item-btn">200 g</button>
     </li>
     <li class="modal-buynow-item">
@@ -44,91 +42,82 @@
           ./img/modal-buy-now/buy3-mobile@2x.jpg 168w,
           ./img/modal-buy-now/buy3@2x.jpg        240w
         "
-        sizes="(max-width: 768px) 84px, 120px, 100vw"
+        sizes="(min-width: 768px) 120px,  (min-width: 320px) 84px, 100vw"
         src="./img/modal-buy-now/buy3-mobile.jpg"
         alt="Milk choco"
-        loading="lazy"
-      />
+        loading="lazy">
       <button type="button" class="buynow-item-btn">300 g</button>
     </li>
   </ul>
   <form class="modal-buynow-form">
-    <label class="modal-buynow-label">
-      Personal information
-      <ul class="buynow-inp-list">
-        <li>
-          <input
-            type="text"
-            name="buynow-name"
-            class="modal-buynow-name modal-buynow-input"
-            pattern="^[a-zA-Z]+$"
-            title="Use english dashboard"
-            placeholder="Name"
-          />
-        </li>
-        <li>
-          <input
-            type="text"
-            name="buynow-surname"
-            class="modal-buynow-name modal-buynow-input"
-            pattern="^[a-zA-Z]+$"
-            title="Use english dashboard"
-            placeholder="Surname"
-          />
-        </li>
-      </ul>
-    </label>
-    <label class="modal-buynow-label">
-      Email
+    <div>
+      <label class="modal-buynow-label">Personal information</label>
+      <span class="buynow-inp-list">
+        <input
+          type="text"
+          name="buynow-name"
+          class="modal-buynow-name modal-buynow-input"
+          pattern="^[a-zA-Z]+$"
+          title="Use english dashboard"
+          placeholder="Name">
+        <input
+          type="text"
+          name="buynow-surname"
+          class="modal-buynow-name modal-buynow-input"
+          pattern="^[a-zA-Z]+$"
+          title="Use english dashboard"
+          placeholder="Surname">
+      </span>
+    </div>
+
+    <div>
+      <label class="modal-buynow-label">Email</label>
       <input
         type="email"
         name="buynow-email"
         class="modal-buynow-input"
-        placeholder="Enter your email"
-      />
-    </label>
-    <label class="modal-buynow-label">
-      Phone number
+        placeholder="Enter your email">
+    </div>
+
+    <div class="buynow-foricon">
+      <label class="modal-buynow-label">Phone number</label>
       <input
         type="tel"
         name="buynow-phone"
         class="buynow-numb modal-buynow-input"
         placeholder="Phone number"
         pattern="[0-9]{9}"
-        title="Enter 9 digits without spaces"
-      />
+        title="Enter 9 digits without spaces">
       <span class="buynow-phoneicon">
         <svg class="buynow-phonesvg">
           <use href="./img/icons.svg#icon-flag"></use>
         </svg>
         +380
       </span>
-    </label>
+    </div>
 
-    <label class="modal-buynow-label">
-      Card number
+    <div class="buynow-foricon">
+      <label class="modal-buynow-label">Card number</label>
       <input
         type="text"
         name="buynow-card"
         class="modal-buynow-input"
         placeholder="Enter card"
         pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}"
-        title="Enter the card number, including spaces"
-      />
+        title="Enter the card number, including spaces">
       <svg class="buynow-cardicon">
         <use href="./img/icons.svg#icon-mastercard"></use>
       </svg>
-    </label>
+    </div>
 
-    <label class="modal-buynow-label">
-      Comment
+    <div>
+      <label class="modal-buynow-label">Comment</label>
       <textarea
         name="buynow-comment"
         class="modal-buynow-input"
         rows="5"
-        placeholder="Enter text"
-      ></textarea>
-    </label>
+        placeholder="Enter text"></textarea>
+    </div>
 
     <button type="submit" class="modal-buynow-submit btn-orange js-modal-close">
       Submit

@@ -126,13 +126,12 @@
 }
 
 .modal-buynow-label {
-  position: relative;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: -0.02em;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  margin-bottom: 8px;
 }
 
 .modal-buynow-input {
@@ -165,14 +164,20 @@
   padding-left: 98px;
 }
 
+.buynow-foricon {
+  position: relative;
+}
+
 .buynow-phoneicon {
   position: absolute;
   display: flex;
   align-items: center;
   gap: 8px;
-  top: 34px;
+  top: 37px;
   left: 18px;
   padding-right: 8px;
+  font-size: 14px;
+  font-weight: 500;
   border-right: 1px solid rgba(17, 17, 17, 0.1);
 }
 
@@ -183,7 +188,7 @@
 
 .buynow-cardicon {
   position: absolute;
-  top: 34px;
+  top: 37px;
   right: 14px;
   width: 32px;
   height: 21px;
