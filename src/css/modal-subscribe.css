@@ -160,6 +160,16 @@
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  outline: transparent;
+
+  transition-property: border-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-input:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 2px 3px 4px 0px rgb(187, 180, 172);
 }
 
 @media only screen and (min-width: 768px) {

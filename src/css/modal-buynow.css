@@ -50,7 +50,6 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .modal-buynow-btn:hover,
@@ -144,7 +143,7 @@
   border-radius: 8px;
   resize: none;
   background-color: var(--bg-color-site);
-  transition-property: border-color;
+  transition-property: border-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
@@ -152,7 +151,7 @@
 
 .modal-buynow-input:focus {
   border-color: var(--secondary-color);
-  box-shadow: 2px 3px 4px 0px rgba(253, 146, 34, 1);
+  box-shadow: 2px 3px 4px 0px rgb(187, 180, 172);
 }
 
 .modal-buynow-input::placeholder {
