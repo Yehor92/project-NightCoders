@@ -8,6 +8,7 @@
   src: url(../fonts/Montserrat-VariableFont_wght.woff) format('woff'),
     url(../fonts/Montserrat-VariableFont_wght.woff2) format('woff2'),
     url(../fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
+  font-display: swap;
 }
 
 @font-face {
@@ -15,6 +16,7 @@
   src: url(../fonts/Montserrat-Italic-VariableFont_wght.woff) format('woff'),
     url(../fonts/Montserrat-Italic-VariableFont_wght.woff2) format('woff2'),
     url(../fonts/Montserrat-Italic-VariableFont_wght.ttf) format('truetype');
+  font-display: swap;
 }
 
 h1,
