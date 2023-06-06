@@ -3,4 +3,3 @@ import './js/reviews-slider';
 import './js/product-slider';
 import './js/modal-openclose.js';
 import './js/aos.js';
-import './js/header.js';
