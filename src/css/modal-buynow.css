@@ -43,16 +43,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg-color-site);
-  padding: 0;
+  background-color: transparent;
   border: none;
+  border-radius: 50%;
+  padding: 0;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-buynow-btn:hover,
+.modal-buynow-btn:focus {
+  background-color: #fcf1e0;
 }
 
 .buynow-btn-svg {
   width: 24px;
   height: 24px;
-  fill: var(--primary-color);
   stroke: var(--primary-color);
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-buynow-btn:hover .buynow-btn-svg,
+.modal-buynow-btn:focus .buynow-btn-svg {
+  stroke: #f16529;
 }
 
 .modal-buynow-title {
@@ -127,6 +144,15 @@
   border-radius: 8px;
   resize: none;
   background-color: var(--bg-color-site);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.modal-buynow-input:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 2px 3px 4px 0px rgba(253, 146, 34, 1);
 }
 
 .modal-buynow-input::placeholder {
