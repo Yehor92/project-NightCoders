@@ -5,6 +5,12 @@
   left: 0;
   z-index: 100;
   background-color: var(--bg-color-site);
+
+  transition: background-color 250ms;
+}
+.header.no-transparency {
+  background-color: rgba(205, 209, 221, 0.4);
+  backdrop-filter: blur(10px);
 }
 .logo-simply {
   font-family: 'Montserrat-italic';
