@@ -53,14 +53,31 @@
   }
 }
 
-.how-made-video {
+.how-made-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 335px;
-  height: 500px;
+}
+
+@media only screen and (min-width: 768px) {
+  .how-made-wrapper {
+    margin: 0 auto;
+    display: none;
+  }
+}
+
+.how-made-img {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   border-radius: 15px;
-  overflow: hidden;
+}
+
+.how-made-icons {
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.how-made-video {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -68,6 +85,14 @@
     max-width: 614px;
     height: 400px;
     margin: 0 auto;
+
+    position: relative;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    border-radius: 15px;
+    overflow: hidden;
+
+    display: block;
   }
 }
 
