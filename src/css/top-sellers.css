@@ -64,6 +64,10 @@
   }
 }
 
+.tsellers-item {
+  width: 344px;
+}
+
 @media only screen and (min-width: 768px) {
   .tsellers-item {
     width: 344px;
