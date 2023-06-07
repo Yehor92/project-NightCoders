@@ -110,8 +110,6 @@
 .product-slider .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
-
-  background: rgba(17, 17, 17, 0.1);
 }
 .product-slider .swiper-pagination-bullet-active {
   width: 28px;
