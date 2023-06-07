@@ -57,6 +57,7 @@
 .img-tsellers {
   margin-bottom: 20px;
   border-radius: 15px;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .img-tsellers {
@@ -65,17 +66,17 @@
 }
 
 .tsellers-item {
-  width: 344px;
+  max-width: 335px;
 }
 
 @media only screen and (min-width: 768px) {
   .tsellers-item {
-    width: 344px;
+    max-width: 344px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .tsellers-item {
-    width: 368px;
+    max-width: 368px;
   }
 }
 
