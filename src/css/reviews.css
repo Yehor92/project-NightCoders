@@ -40,17 +40,18 @@
 .reviews-slide-holder {
   margin-top: -40px;
   padding: 56px 18px 42px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   text-align: center;
   background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9px 26px rgba(215, 228, 249, 0.25);
   border-radius: 15px;
 }
+
 @media only screen and (min-width: 768px) {
   .reviews-slide-holder {
     padding: 56px 18px 24px;
-    margin-bottom: 31px;
+    margin-bottom: 35px;
   }
 }
 
@@ -79,4 +80,5 @@
   --swiper-pagination-color: #fd9222;
   --swiper-pagination-bullet-border-radius: 30%;
   --swiper-pagination-bullet-width: 28px;
+  --swiper-pagination-bullet-border-radius: 13px;
 }
