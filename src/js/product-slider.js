@@ -1,5 +1,10 @@
+// core version + navigation, pagination modules:
+import Swiper, { Pagination } from 'swiper';
+
 const swiper = new Swiper('.product-slider', {
   // Optional parameters
+  modules: [Pagination],
+
   direction: 'horizontal',
   loop: true,
   // Default parameters
